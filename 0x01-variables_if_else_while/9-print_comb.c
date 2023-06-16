@@ -19,8 +19,8 @@ int main(void)
 		}
 		putchar(n);
 		putchar(sim);
-		putchar(sp);
 	}
+	putchar(sp);
 	putchar('\n');
 	return(0);
 }
