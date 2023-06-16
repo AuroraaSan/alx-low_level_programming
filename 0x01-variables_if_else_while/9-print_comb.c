@@ -16,10 +16,9 @@ int main(void)
 
 	for (n = 48 ; n <= 57 ; n++)
 	{
-		if (n == 57)
+		if ( n == 57)
 		{
-			sim = 36;
-			sp = 0;
+			sim = 0;
 		}
 		putchar(n);
 		putchar(sim);
