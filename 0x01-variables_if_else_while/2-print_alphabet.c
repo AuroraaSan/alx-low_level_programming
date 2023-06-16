@@ -13,6 +13,9 @@ int main(void)
 	int n = 'a';
 
 	for (n ; n <= 'z'; n++)
+	{
 		putchar(n);
+	}
+	putchar('\n');
 	return (0);
 }
