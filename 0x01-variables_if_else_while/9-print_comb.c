@@ -13,17 +13,15 @@ int sim = 44;
 int sp = 32;
 for(n = 48;n<= 57;n++)
 {
-if( n==57)
-{
-sim=32;
+        if (n != 48) // Add condition to avoid printing space before the first number
+        {
+            putchar(sp);
+        }
+
+        putchar(n);
+        putchar(sim);
+    }
+
+    return 0;
 }
-putchar(n);
-putchar(sim);
-if (n!=57)
-{
-putchar(sp);
-}
-}
-putchar('\n');
-return(0);
-}
+
