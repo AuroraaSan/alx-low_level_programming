@@ -19,7 +19,7 @@ int main(void)
                 }
                 putchar(n);
                 putchar(sim);
-                if (n != 57) // Check if it is the last number before printing the space
+                if (n != 57)
         {
             putchar(sp);
         }
