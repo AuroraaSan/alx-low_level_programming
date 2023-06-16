@@ -13,13 +13,12 @@ int main(void)
         int sp = 32;
         for(n = 48 ; n <= 57 ; n++)
         {
-                if( n == 57)
+                putchar(n+48);
+		if( n != 57)
                 {
-                        sim = 32;
-                }
-                putchar(n);
                 putchar(sim);
                 putchar(sp);
+		}
         }
         putchar('\n');
         return(0);
