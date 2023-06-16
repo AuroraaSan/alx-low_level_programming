@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  * main - Entry point
  *
@@ -7,23 +6,21 @@
  *
  * Return: 0 (Scuccess)
 */
-
 int main(void)
 {
 	int n;
 	int sim = 44;
 	int sp = 32;
-
-	for (n = 48 ; n <= 57 ; n++)
+	for(n = 48 ; n <= 57 ; n++)
 	{
-		if ( n == 57)
+		if( n == 57)
 		{
-			sim = 0;
+			sim = 32;
 		}
 		putchar(n);
 		putchar(sim);
 		putchar(sp);
 	}
 	putchar('\n');
-	return (0);
+	return(0);
 }
