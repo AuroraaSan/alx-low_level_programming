@@ -20,7 +20,7 @@ int main(void)
 		if (n != 57)
 		{
 			putchar(sim);
-                 	putchar(sp);
+			putchar(sp);
 		}
 	} putchar('\n');
 	return (0);
