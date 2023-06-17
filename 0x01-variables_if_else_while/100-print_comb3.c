@@ -19,9 +19,8 @@ int main(void)
 		{
 			if (n != k && n < k)
 			{
-				putchar(n+48);
-				putchar(k+48);
-				
+				putchar(n + 48);
+				putchar(k + 48);
 				if (n + k != 17)
 				{
 					putchar(',');
