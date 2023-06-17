@@ -16,13 +16,12 @@ int main(void)
 
 	for (n = 48 ; n <= 57 ; n++)
 	{
-		if (n == 57)
+		putchar(n);
+		if (n != 57)
 		{
-			sim = 0;
-			sp = 0;
-		} putchar(n);
-		 putchar(sim);
-		 putchar(sp);
+			putchar(sim);
+                 	putchar(sp);
+		}
 	} putchar('\n');
 	return (0);
 }
