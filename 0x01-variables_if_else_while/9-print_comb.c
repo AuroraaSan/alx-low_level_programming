@@ -18,11 +18,11 @@ int main(void)
 	{
 		if (n == 57)
 		{
-			sim = 127;
-			sp = 127;
+			sim = 0;
+			sp = 0;
 		} putchar(n);
 		 putchar(sim);
 		 putchar(sp);
-	} putchar('\n'); 
+	} putchar('\n');
 	return (0);
 }
