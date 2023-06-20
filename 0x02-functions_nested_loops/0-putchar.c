@@ -1,16 +1,23 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
  * main - Entry point
  *
- * Description: prints _putchar
+ * Description: prints _puthcar
  *
  * Return: 0 (Success)
 */
 
 int main(void)
 {
-	printf("_putchar\n");
-	return(0);
+	char str[] = "_putchar";
+	int ch;
+
+	for (ch = 0; ch < 0; ch++)
+	{
+		_putchar(str[ch]);
+	}
+	_putchar('\n');
+
+	return (0);
 }
