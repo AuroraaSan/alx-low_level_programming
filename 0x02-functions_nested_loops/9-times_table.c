@@ -8,18 +8,42 @@ void times_table(void)
 {
 	int num;
 	int line;
-	int n;
 
 	for (line = 1; line <= 10; line ++)
 	{
 		for (num = 1; num <= 9 ; num++)
 		{
-			for (n = 0; n <=9; n++)
-			{
-				_putchar((num * n) + 48);
-				_putchar(',');
-				_putchar(' ');
-			}
-		}	
+			_putchar((num * 0) + 48);
+			_putchar(',');
+			_putchar(' ');
+			_putchar((num * 1) + 48);
+			_putchar(',');
+                        _putchar(' ');
+			_putchar((num * 2) + 48);
+                        _putchar(',');
+                        _putchar(' ');
+			_putchar((num * 3) + 48);
+                        _putchar(',');
+                        _putchar(' ');
+			_putchar((num * 4) + 48);
+                        _putchar(',');
+                        _putchar(' ');
+			_putchar((num * 5) + 48);
+                        _putchar(',');
+                        _putchar(' ');
+			_putchar((num * 6) + 48);
+                        _putchar(',');
+                        _putchar(' ');
+			_putchar((num * 7) + 48);
+                        _putchar(',');
+                        _putchar(' ');
+			_putchar((num * 8) + 48);
+                        _putchar(',');
+                        _putchar(' ');
+			_putchar((num * 9) + 48);
+                        _putchar(',');
+                        _putchar(' ');
+		}
+		_putchar('\n');
 	}
 }
