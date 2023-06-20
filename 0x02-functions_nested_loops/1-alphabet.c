@@ -1,12 +1,9 @@
 #include "main.h"
 
 /**
- * main - Entry point
- *
- * Description: prints lowercase alphabet
- *
- * Return: 0 (Success)
-*/
+ * print_alphabet - Prints the alphabet in lowercase.
+ */
+
 void print_alphabet(void)
 {
 	int car;
