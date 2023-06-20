@@ -1,6 +1,8 @@
 #include "main.h"
 
-/***/
+/**
+ * jack_bauer - prints time
+*/
 
 void jack_bauer(void)
 {
@@ -10,10 +12,10 @@ void jack_bauer(void)
 	{
 		for (min = 0; min <= 59; min++)
 		{
-			_putchar((hr/10) + 48);
+			_putchar((hr / 10) + 48);
 			_putchar((hr % 10) + 48);
 			_putchar(':');
-			_putchar((min/10) + 48);
+			_putchar((min / 10) + 48);
 			_putchar((min % 10) + 48);
 			_putchar('\n');
 		}
