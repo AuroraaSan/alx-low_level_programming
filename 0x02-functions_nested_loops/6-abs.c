@@ -2,18 +2,14 @@
 
 /**
  * _abs - gets absolute of number
- * @int: input of function
+ * @n: input of function
+ *
+ * Return: returns value
 */
 
-int _abs(int)
+int _abs(n)
 {
-	if (int == 0)
-	{
-		_putchar('0');
-	} else if (int < 0)
-	{
-		_putchar(abs(int));
-	}
-	_putchar(int);
-	_putchar('\n');
+	if (n < 0)
+		n = (-1) * n;
+	return (n);
 }
