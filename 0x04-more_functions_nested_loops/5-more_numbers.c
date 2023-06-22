@@ -7,24 +7,21 @@
 void more_numbers(void)
 {
 	int num;
-	int first;
-	int second;
+	int count
 	int i;
 
-	for (i = 0; i <= 10; i++)
+	for (i = 1; i <= 10; i++)
 	{
-	for (num = 0; num <= 14; num++)
-	{
-		if (num < 10)
+		for (count = 0; count <= 14; count++)
 		{
+			num = count;
+			if (num > 9)
+			{
+				_putchar(1 + 48);
+				num = count % 10;
+			}
 			_putchar(num + 48);
-		} else
-		{
-			first = num / 10;
-			_putchar(first + 48);
-			second = num % 10;
-			_putchar(second + 48);
-		}
-	} _putchar('\n');
+		} 
+		_putchar('\n');
 	}
 }
