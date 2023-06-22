@@ -7,7 +7,7 @@
 void more_numbers(void)
 {
 	int num;
-	int count
+	int count;
 	int i;
 
 	for (i = 1; i <= 10; i++)
@@ -21,7 +21,7 @@ void more_numbers(void)
 				num = count % 10;
 			}
 			_putchar(num + 48);
-		} 
+		}
 		_putchar('\n');
 	}
 }
