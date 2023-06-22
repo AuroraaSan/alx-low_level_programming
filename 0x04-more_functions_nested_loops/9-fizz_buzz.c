@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 /**
- * fizzbuzz - prints numbers from 1 to 100*/
+ * fizzbuzz - prints numbers from 1 to 100
+*/
 
 void fizzbuzz(void)
 {
