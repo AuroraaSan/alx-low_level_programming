@@ -2,6 +2,9 @@
 
 /**
  * print_triangle - prints triangle
+ * @size: size of the triangles
+ *
+ * Return: Always 0 (Success)
 */
 
 void print_triangle(int size)
