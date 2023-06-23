@@ -9,7 +9,7 @@
 
 void print_triangle(int size)
 {
-	int row, num, x;
+	int row, num;
 
 	if (size <= 0)
 		_putchar('\n');
@@ -22,7 +22,7 @@ void print_triangle(int size)
 				if ((row + num) <= size)
 					_putchar(' ');
 				else
-					_putchar('0');
+					_putchar('#');
 			}
 			_putchar('\n');
 		}
