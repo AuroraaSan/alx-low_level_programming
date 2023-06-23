@@ -1,10 +1,12 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * fizzbuzz - prints numbers from 1 to 100
+ * main - prints numbers from 1 to 100
+ *
+ * Return: Always 0
 */
 
-void fizzbuzz(void)
+void main(void)
 {
 	int x;
 
