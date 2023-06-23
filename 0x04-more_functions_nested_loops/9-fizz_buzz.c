@@ -6,7 +6,7 @@
  * Return: Always 0
 */
 
-void main(void)
+int main(void)
 {
 	int x;
 
@@ -23,7 +23,7 @@ void main(void)
 		if (x != 100)
 			printf(" ");
 		else
-			printf('\n');
+			printf("\n");
 	}
 	return (0);
 }
