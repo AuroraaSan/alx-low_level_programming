@@ -13,6 +13,7 @@ char *_strncat(char *dest, char *src, int n)
 {
 	int i, x;
 
+	i = 0;
 	while (dest[i])
 		i++;
 	for (x = 0; x < n && src[x] != '\0'; x++)
