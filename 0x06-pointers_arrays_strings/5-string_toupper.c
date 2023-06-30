@@ -3,8 +3,6 @@
 /**
  * string_toupper - changes lowercase letters of a string to uppercase
  * @char: string
- *
- * Return: str
 */
 char *string_toupper(char *)
 {
@@ -17,5 +15,5 @@ char *string_toupper(char *)
 			str[i] = str[i] - 32;
 		}
 	}
-	return (str);
+	return (srt);
 }
