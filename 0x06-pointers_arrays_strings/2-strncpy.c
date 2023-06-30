@@ -6,7 +6,7 @@
  * @src:pointer 2
  * @n: # of strings
  *
- * Return : @dest
+ * Return: destination string
 */
 
 char *_strncpy(char *dest, char *src, int n)
