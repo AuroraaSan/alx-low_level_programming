@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * strspn - gets the length of a prefix substring
+ * _strspn - gets the length of a prefix substring
  * @s: pointer to string
  * @accept: pointer to the consisting bytes
  *
@@ -13,7 +13,7 @@ unsigned int _strspn(char *s, char *accept)
 	int count = 0;
 	int i, x;
 	int found;
-	
+
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		found = 0;
