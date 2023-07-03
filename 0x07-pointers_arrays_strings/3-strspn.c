@@ -12,16 +12,22 @@ unsigned int _strspn(char *s, char *accept)
 {
 	int count = 0;
 	int i, x;
+	int found
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
+		found = 0;
 		for (x = 0; accept[x] != s[i]; x++)
 		{
 			if (accept[x] == '\0')
-				count++;
-			else
+			{
+				found = 1;
 				break;
+			}
 		}
+		if (!found)
+			break;
+		count++;
 	}
 	return (count);
 }
