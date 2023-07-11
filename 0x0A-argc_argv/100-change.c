@@ -5,7 +5,7 @@
  * main - prints the minimum number of coins to make change
  * @argc: int
  * @argv: list
- * Retun: 0 if not error 1 if there is error
+ * Return: 0 if not error 1 if there is error
 */
 
 int main(int argc, char *argv[])
