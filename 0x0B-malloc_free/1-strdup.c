@@ -10,10 +10,13 @@
 
 char *_strdup(char *str)
 {
+	if (str == NULL)
+		return NULL;
+
 	size_t lentt = strlen(str);
 	char *new_str = (char*)malloc((lentt + 1) * sizeof(char));
 
-	if (str == NULL || new_str == NULL)
+	if (new_str == NULL)
 		return NULL;
 	strcpy(new_str, str);
 	return new_str;
