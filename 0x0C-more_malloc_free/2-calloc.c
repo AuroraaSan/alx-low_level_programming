@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * _memset - fills with zero
+ * *_memset - fills with zero
  * @s: pointer
  * @b: constant
  * @n: max bytes
@@ -26,8 +26,7 @@ char *_memset(char *s, char b, unsigned int n)
 */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	int *m;
-	unsigned int k = sizeof(int) * nmemb;
+	void *m;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
