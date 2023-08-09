@@ -1,5 +1,7 @@
 #include "main.h"
 
+#include <sys/stat.h>
+
 #define USAGE "Usage: cp file_from file_to\n"
 #define ERR_NOREAD "Error: Can't read from file %s\n"
 #define ERR_NOWRTIE "Error: Can't write to %s\n"
@@ -22,7 +24,7 @@ int main(int ac, char **av)
 		dprintf(STDERR_FILENO, USAGE), exit(97);
 	from_fd = open(av[1], O_RDONLY);
 	if (from_fd == -1)
-		dfprintf(STDERR_FILENO, ERR_NOREAD, av[1]), exit(98);
+		dprintf(STDERR_FILENO, ERR_NOREAD, av[1]), exit(98);
 	to_fd = open(av[2], O_WRONLY | O_CREAT | O_TRUNC, PERMISSIONS);
 	if (to_fd == -1)
 		dfprintf(STDERR_FILENO, ERR_NOWRITE, av[2], exit(99));
@@ -37,4 +39,5 @@ int main(int ac, char **av)
 		dprintf(STDERR_FILENO, ERR_NOCLOSE, from_fd), exit(100);
 	if (to_fd)
 		dprintf(STDERR_FILENO, ERR_NOCLOSE, from_fd), exit(100);
+	return (EXIT_SUCCESS);
 }
