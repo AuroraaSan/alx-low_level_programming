@@ -2,7 +2,7 @@
 
 /**
  * binary_to_uint - convert binary to int
- * @b:binary
+ * @b: binary
  * Return: result or zero
 */
 
