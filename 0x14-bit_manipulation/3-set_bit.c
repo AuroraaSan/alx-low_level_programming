@@ -9,10 +9,7 @@
  */
 int set_bit(unsigned long int *n, unsigned int index) 
 {
-	unsigned long int mask = 1UL << index;
-
-	if (index >= (sizeof(unsigned long int) * 8)) 
-		return -1;
-	*n |= mask; // Set the bit to 1 using bitwise OR
-	return 1; // Success
+	if (index >= (sizeof(n) * 8)) 
+		return (-1);
+	return (!!(*n |= 1L << index));
 }
