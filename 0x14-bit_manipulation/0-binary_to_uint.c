@@ -8,7 +8,7 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int k;
+	unsigned int k = 0;
 
 	if (b == NULL)
 		return (0);
