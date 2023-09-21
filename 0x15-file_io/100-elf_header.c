@@ -64,10 +64,10 @@ void print_magic(unsigned char *e_ident)
 }
 
 /**
- * print_class - Prints the class of an ELF header.
- * @e_ident: A pointer to an array containing the ELF class.
+ * print_clas - Prints the class of an ELF header.
+ * @e_ident: A pointer to an array
  */
-void print_class(unsigned char *e_ident)
+void print_clas(unsigned char *e_ident)
 {
 	printf(" Class: ");
 
@@ -148,8 +148,8 @@ void print_osabi(unsigned char *e_ident)
 		printf("UNIX - NetBSD\n");
 		break;
 	case ELFOSABI_HPUX:
-                printf("UNIX - HP-UX\n");
-                break;
+		printf("UNIX - HP-UX\n");
+		break;
 	case ELFOSABI_LINUX:
 		printf("UNIX - Linux\n");
 		break;
