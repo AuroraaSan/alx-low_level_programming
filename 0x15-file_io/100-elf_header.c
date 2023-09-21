@@ -144,12 +144,12 @@ void print_osabi(unsigned char *e_ident)
 	case ELFOSABI_NONE:
 		printf("UNIX - System V\n");
 		break;
-	case ELFOSABI_HPUX:
-		printf("UNIX - HP-UX\n");
-		break;
 	case ELFOSABI_NETBSD:
 		printf("UNIX - NetBSD\n");
 		break;
+	case ELFOSABI_HPUX:
+                printf("UNIX - HP-UX\n");
+                break;
 	case ELFOSABI_LINUX:
 		printf("UNIX - Linux\n");
 		break;
@@ -228,14 +228,12 @@ void print_type(unsigned int e_type, unsigned char *e_ident)
 void prientry(unsigned long int e_entry, unsigned char *e_ident)
 {
 	printf(" Entry point address: ");
-
 	if (e_ident[EI_DATA] == ELFDATA2MSB)
 	{
 		e_entry = ((e_entry << 8) & 0xFF00FF00) |
 			  ((e_entry >> 8) & 0xFF00FF);
 		e_entry = (e_entry << 16) | (e_entry >> 16);
 	}
-
 	if (e_ident[EI_CLASS] == ELFCLASS32)
 		printf("%#x\n", (unsigned int)e_entry);
 
@@ -260,10 +258,9 @@ void close_elf(int elf)
 }
 
 /**
- * main - Displays the information contained in the
- * ELF header at the start of an ELF file.
- * @argc: The number of arguments supplied to the program.
- * @argv: An array of pointers to the arguments.
+ * main - Displays the information
+ * @argc: The number of arguments
+ * @argv: An array of pointers to the arg
  *
  * Return: 0 on success.
  *
